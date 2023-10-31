@@ -11,6 +11,9 @@ int check_cycle(listint_t *list)
 	listint_t *current;
 	int counter = 0;
 
+	if (!list)
+		return (0);
+
 	current = list;
 
 	while (current != NULL)
