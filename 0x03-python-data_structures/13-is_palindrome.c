@@ -35,7 +35,7 @@ int is_palindrome(listint_t **head)
 	int n;
 
 	if (head == NULL || *head == NULL)
-		return (1)
+		return (1);
 
 	numbers = malloc(sizeof(int) * 1024);
 	current = *head;
