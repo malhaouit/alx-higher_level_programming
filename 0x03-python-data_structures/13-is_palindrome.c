@@ -39,7 +39,7 @@ int is_palindrome(listint_t **head)
 
 	n = initialize_array(numbers, current);
 
-	if (n == 0)
+	if (n == 0 || n % 2 != 0)
 	{
 		free(numbers);
 		return (1);
