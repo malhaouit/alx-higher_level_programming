@@ -38,7 +38,7 @@ int is_palindrome(listint_t **head)
 	if (head == NULL || *head == NULL)
 		return (1);
 
-	numbers = malloc(sizeof(int) * 1024);
+	numbers = malloc(sizeof(int) * 1024 * 2);
 	current = *head;
 
 	n = initialize_array(numbers, current);
