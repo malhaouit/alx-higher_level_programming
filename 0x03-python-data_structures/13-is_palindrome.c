@@ -33,6 +33,7 @@ int is_palindrome(listint_t **head)
 	listint_t *current;
 	int *numbers;
 	int n;
+	int i = 0, j;
 
 	if (head == NULL || *head == NULL)
 		return (1);
@@ -41,25 +42,18 @@ int is_palindrome(listint_t **head)
 	current = *head;
 
 	n = initialize_array(numbers, current);
+	
+	j = n - 1;
 
-	if (n % 2 != 0)
+	while (i < n / 2)
 	{
-		free(numbers);
-		return (0);
-	}
-	else
-	{
-		int i = 0, j = n - 1;
-
-		while (i < n / 2)
+		if (numbers[i++] != numbers[j--])
 		{
-			if (numbers[i++] != numbers[j--])
-			{
-				free(numbers);
-				return (0);
-			}
+			free(numbers);
+			return (0);
 		}
 	}
+	
 	free(numbers);
 	return (1);
 }
