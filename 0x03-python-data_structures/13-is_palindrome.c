@@ -34,18 +34,19 @@ int is_palindrome(listint_t **head)
 	int *numbers;
 	int n;
 
+	if (head == NULL || *head == NULL)
+		return (1)
+
 	numbers = malloc(sizeof(int) * 1024);
 	current = *head;
 
 	n = initialize_array(numbers, current);
 
-	if (n == 0)
+	if (n % 2 != 0)
 	{
 		free(numbers);
-		return (1);
-	}
-	if (n % 2 != 0)
 		return (0);
+	}
 	else
 	{
 		int i = 0, j = n - 1;
