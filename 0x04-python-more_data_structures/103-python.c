@@ -57,10 +57,16 @@ void print_python_bytes(PyObject *p)
                 printf("  first %d bytes: ", bytes);
         }
 
+	if (size >= 10)
+	{
+		int bytes = 10;
+		printf("  first %d bytes: ", bytes);
+	}
+
 	for (i = 0; i < size && i < 10; ++i)
 	{
 		printf("%02x ", (unsigned char)str[i]);
-		if (i == size - 1)
+		if (i != 9 && i == size - 1)
 			printf("00");
 	}
 	printf("\n");
