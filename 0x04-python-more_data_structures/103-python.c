@@ -50,9 +50,9 @@ void print_python_bytes(PyObject *p)
 
 	printf("  size: %zd\n", size);
 	printf("  trying string: %s\n", str);
-	printf("  first 10 bytes: ");
+	printf("  first 6 bytes: ");
     
-	for (i = 0; i < size && i < 10; ++i)
+	for (i = 0; i <= size && i < 10; ++i)
 	{
 		printf("%02x ", (unsigned char)str[i]);
 	}
