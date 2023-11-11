@@ -73,6 +73,7 @@ void print_python_bytes(PyObject *p)
 				printf("%02x ", (unsigned char)str[i]);
 			else
 				printf("00");
+		}
 	}
 	printf("\n");
 }
