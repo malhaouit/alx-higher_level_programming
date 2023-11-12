@@ -9,11 +9,11 @@
 void print_python_list(PyObject *p)
 {
         int i;
-	Py_ssize_t size, allocated;
+        Py_ssize_t size, allocated;
         PyObject *plo;
 
-	size = PyList_Size(p);
-	allocated = ((PyListObject *)p)->allocated;
+        size = PyList_Size(p);
+        allocated = ((PyListObject *)p)->allocated;
 
         printf("[*] Size of the Python List = %zd\n", size);
         printf("[*] Allocated = %zd\n", allocated);
@@ -34,46 +34,38 @@ void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
-	Py_ssize_t size, i;
-	char *str;
-    
-	printf("[.] bytes object info\n");
-    
-	if (!PyBytes_Check(p))
-	{
-		printf("  [ERROR] Invalid Bytes Object\n");
-		return;
-	}
+        Py_ssize_t size, i;
+        char *str;
 
-	size = PyBytes_Size(p);
-	str = PyBytes_AsString(p);
+        printf("[.] bytes object info\n");
 
-	printf("  size: %zd\n", size);
-	printf("  trying string: %s\n", str);
-
-	int bytes;
-	if (size < 10)
+        if (!PyBytes_Check(p))
         {
-                bytes = size + 1;
-                printf("  first %d bytes: ", bytes);
+                printf("  [ERROR] Invalid Bytes Object\n");
+                return;
         }
-	else
-	{
-		bytes = 10;
-		printf("  first %d bytes: ", bytes);
-	}
 
-	for (i = 0; i < bytes; ++i)
-	{
-		if (bytes == 10)
-			printf("%02x ", (unsigned char)str[i]);
-		else
-		{
-			if (i != bytes - 1)
-				printf("%02x ", (unsigned char)str[i]);
-			else
-				printf("00");
-		}
-	}
-	printf("\n");
+        size = PyBytes_Size(p);
+        str = PyBytes_AsString(p);
+
+        printf("  size: %zd\n", size);
+        printf("  trying string: %s\n", str);
+
+        if (size < 10)
+        {
+                size = size + 1;
+        }
+        else
+        {
+                size = 10;
+        }
+        printf("  first %zd bytes: ", size);
+        for (i = 0; i < size; ++i)
+        {
+                printf("%02hhx", (unsigned char)str[i]);
+                if (i == (size - 1))
+                        printf("\n");
+                else
+                        printf(" ");
+        }
 }
