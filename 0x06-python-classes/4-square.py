@@ -1,4 +1,4 @@
-o#!/usr/bin/python3
+#!/usr/bin/python3
 """ Square class, no module imported"""
 
 
