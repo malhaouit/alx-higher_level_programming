@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Square class, no module imported """
+""" Square class, no module imported"""
 
 
 class Square:
@@ -7,15 +7,16 @@ class Square:
 
     def __init__(self, size=0):
         """
-        value instantiation of size attribute
+        initialize size value
         args:
-        size (int): size of the square
+        size (int): the size of square
         """
-
-        if type(size) != int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-
         if size < 0:
-            raise ValueError("size must be >= 0")
+            raise TypeError("size must be >= 0")
         else:
-            self.size = size
+            self.__size = size
+
+    def area(self):
+        return size * size
