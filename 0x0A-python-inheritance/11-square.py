@@ -30,4 +30,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """ Formats the string to: [Rectangle] <size>/<size> """
-        return return "[Rectangle] {:d}/{:d}".format(self.__size, self.__size)
+        return "[Rectangle] {:d}/{:d}".format(self.__size, self.__size)
