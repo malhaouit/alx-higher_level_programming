@@ -1,0 +1,57 @@
+The ``7-base_geometry`` module
+======================
+
+Using ``BaseGeometry``
+-------------------
+
+Import the class BaseGeometry for testing cases:
+	>>> BaseGeometry =  __import__('7-base_geometry').BaseGeometry
+
+==> Tests:
+- Call area() method:
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
+
+- Give an argument to erea():
+	>>> bg = BaseGeometry()
+	>>> bg.area(1)
+	Traceback (most recent call last):
+	...
+	TypeError: area() takes 1 positional argument but 2 were given
+
+- Test integer_validator function:
+	>>> bg.integer_validator("my_int", 25)
+	>>>
+
+- Second Test of integer_validator function:
+	>>> bg.integer_validator("name", "Abdelmounaim")
+	Traceback (most recent call last): 
+	...
+	TypeError: name must be an integer
+
+- Thired Test of integer_validator function:
+	>>> bg.integer_validator("age", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: age must be greater than 0
+
+- Fourth Test of integer_validator function:
+	>>> bg.integer_validator("height", -5.7)
+	Traceback (most recent call last):
+        ...
+        TypeError: height must be an integer
+
+- Fifth Test of integer_validator function:
+	>>> bg.integer_validator("type", (1, 2))
+	Traceback (most recent call last):
+        ...
+        TypeError: type must be an integer
+
+-- Sixth Test of integer_validator function:
+	>>> bg.integer_validator("type", )
+	Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
