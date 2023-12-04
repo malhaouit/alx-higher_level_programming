@@ -97,3 +97,15 @@ Import the class BaseGeometry for testing cases:
         Traceback (most recent call last):
         ...
         TypeError: type must be an integer
+
+- Test number 14 of integer_validator function:
+        >>> bg.integer_validator("type", complex(1, 1))
+        Traceback (most recent call last):
+        ...
+        TypeError: type must be an integer
+
+- Test number 15 of integer_validator function:
+        >>> bg.integer_validator("type", -1)
+        Traceback (most recent call last):
+        ...
+	ValueError: type must be greater than 0
