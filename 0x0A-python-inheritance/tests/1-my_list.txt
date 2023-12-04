@@ -25,6 +25,8 @@ Test sorting an orderd list:
 	>>> ordered_l.append(4)
 	>>> ordered_l.print_sorted()
 	[1, 2, 3, 4]
+	>>> print(ordered_l)
+	[1, 2, 3, 4]
 
 Test sorting an unordered list:
 	>>> l = MyList()
@@ -34,6 +36,8 @@ Test sorting an unordered list:
 	>>> l.append(3)
 	>>> l.print_sorted()
 	[1, 2, 3, 4]
+	>>> print(l)
+	[2, 4, 1, 3]
 
 Test sorting negative numbers:
 	>>> negative_l = MyList()
@@ -43,6 +47,8 @@ Test sorting negative numbers:
         >>> negative_l.append(-1)
 	>>> negative_l.print_sorted()
 	[-10, -5, -2, -1]
+	>>> print(negative_l)
+	[-2, -5, -10, -1]
 
 Test issubclass function:
 	>>> issubclass(MyList, list)
