@@ -1,0 +1,56 @@
+The ``1-my_list`` module
+============================
+
+Using ``1-mylist``
+---------------------
+
+Import function print_sorted() for testing cases:
+	>>> MyList = __import__('1-my_list').MyList
+
+Test the class type:
+	>>> l = MyList()
+	>>> type(l) is MyList
+	True
+
+Test Sorting empty list:
+	>>> empty_list = MyList()
+	>>> empty_list.print_sorted()
+	[]
+
+Test sorting an orderd list:
+	>>> ordered_l = MyList()
+	>>> ordered_l.append(1)
+	>>> ordered_l.append(2)
+	>>> ordered_l.append(3)
+	>>> ordered_l.append(4)
+	>>> ordered_l.print_sorted()
+	[1, 2, 3, 4]
+
+Test sorting an unordered list:
+	>>> l = MyList()
+	>>> l.append(2)
+	>>> l.append(4)
+	>>> l.append(1)
+	>>> l.append(3)
+	>>> l.print_sorted()
+	[1, 2, 3, 4]
+
+Test sorting negative numbers:
+	>>> negative_l = MyList()
+	>>> negative_l.append(-2)
+        >>> negative_l.append(-5)
+        >>> negative_l.append(-10)
+        >>> negative_l.append(-1)
+	>>> negative_l.print_sorted()
+	[-10, -5, -2, -1]
+
+Test issubclass function:
+	>>> issubclass(MyList, list)
+	True
+
+Check passing an argument:
+	>>> l = MyList()
+	>>> l.print_sorted(3)
+	Traceback (most recent call last):
+	...
+	TypeError: print_sorted() takes 1 positional argument but 2 were given
