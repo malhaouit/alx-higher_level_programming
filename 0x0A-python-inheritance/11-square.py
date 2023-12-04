@@ -29,5 +29,5 @@ class Square(Rectangle):
         return self.__size ** 2
 
     def __str__(self):
-        """ Formats the string to: [Rectangle] <size>/<size> """
-        return "[Rectangle] {:d}/{:d}".format(self.__size, self.__size)
+        """ Formats the string to: [Square] <size>/<size> """
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
