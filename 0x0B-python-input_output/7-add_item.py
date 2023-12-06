@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This module loads the existing list from the JSON file (add_item.json) if
-it exists, then it saves the updated list to the JSON file (add_item.json)
+"""This module loads, saves a list to the JSON file
 No file permissions / exceptions handled here"""
 from sys import argv
 
