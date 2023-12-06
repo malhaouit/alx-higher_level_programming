@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This module loads, saves a list to the JSON file
-No file permissions / exceptions handled here"""
+"""This module loads, saves a list to the JSON file"""
 from sys import argv
 
 
