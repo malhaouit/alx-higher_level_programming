@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module loads, saves a list to the JSON file"""
+"""This module loads a list, saves the updated list to the JSON file"""
 from sys import argv
 
 
