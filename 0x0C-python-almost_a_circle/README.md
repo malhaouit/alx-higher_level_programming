@@ -2,9 +2,10 @@
 
 ## Introduction
 
-This project covers three important concepts in world of scripting, parsing and processing files (loops, conditions, and parsing). To accomplish the tasks we will need some tools like while loop, for loop, if condition and other commands that are required to accomplish the tasks of this project. It includes **mandatory** tasks and **advanced** tasks.
+This project covers various concepts of Python, including the use of classes, constructors, getters, setters, private attributes, special methods, inheritance, JSON and many more. 
 
-Note: For more information about the privacy of this project and other related projects see the README file of the repo.
+**Note:** As a student at ALX Software Engineering School, and in adherence to privacy regulations and in deference to the proprietary rights of the curriculum owner, I am unable to share all the comprehensive details about the project and each task.  
+For more information, please refer to the README file inside the [repository](https://github.com/malhaouit/alx-system_engineering-devops) of this project.
 
 ## Project Structure
 
@@ -25,7 +26,7 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 		\- create private class attribute `__nb_objects = 0`  
 		\- implement a class constructor: `def __init__(self, id=None):`  
 
-	**Note:** This class will be the “base” of all other classes in this project. The goal of it is to manage id attribute in all your future classes and to avoid duplicating the same code.
+	**Note:** This class will be the “base” of all other classes in this project. The goal of it is to manage `id` attribute in all your future classes and to avoid duplicating the same code.
 
 - **Task 2:** __First Rectangle__   
 
