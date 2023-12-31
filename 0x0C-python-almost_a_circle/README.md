@@ -1,11 +1,11 @@
-# Python Project - Python, Almost a Circle
+# Python Project - Python is Almost a Circle
 
 ## Introduction
 
 This project covers various concepts of Python, including the use of classes, constructors, getters, setters, private attributes, special methods, inheritance, JSON and many more. 
 
 **Note:** As a student at ALX Software Engineering School, and in adherence to privacy regulations and in deference to the proprietary rights of the curriculum owner, I am unable to share all the comprehensive details about the project and each task.  
-For more information, please refer to the README file inside the [repository](https://github.com/malhaouit/alx-system_engineering-devops) of this project.
+For more information, please refer to the README file inside the [repository](https://github.com/malhaouit/alx-system_engineering-devops/blob/master/README.md) of this project.
 
 ## Project Structure
 
@@ -28,9 +28,17 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 
 	**Note:** This class will be the “base” of all other classes in this project. The goal of it is to manage `id` attribute in all your future classes and to avoid duplicating the same code.
 
-- **Task 2:** __First Rectangle__   
+- **Task 2:** __First Rectangle__  
+	+ Files: [models/rectangle.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/rectangle.py)  
 
-- **Taask 3:** __Validate attributes__  
+	Inside the file `rectangle.py`:  
+	+ write a class `Rectangle` that inherits from `Base`:  
+	+ write a private instance attributes (`__width`, `__height`, `__x`, `__y`)  
+	+ each attribute has its own public getter and setter  
+	+ implement a class constructor: `def __init__(self, width, height, x=0, y=0, id=None)` that calls the super class with `id`
+	 
+
+- **Task 3:** __Validate attributes__  
 
 - **Task 4:** `Area first`  
 
