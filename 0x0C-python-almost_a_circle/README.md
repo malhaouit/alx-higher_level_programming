@@ -15,7 +15,7 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 - **Task 0:** `If it's not tested it doesn't work`  
 
 - **Task 1:** `Base class`  
-+ Files: __models//base.py, models//_/_init/_/_.py__
++ Files: [models/base.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/base.py), models/__init__.py
 In this task a Base class will be created
 
 - **Task 2:** `First Rectangle`  
