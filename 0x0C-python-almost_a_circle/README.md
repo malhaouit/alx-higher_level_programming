@@ -8,13 +8,15 @@ Note: For more information about the privacy of this project and other related p
 
 ## Project Structure
 
-This project includes 11 mandatory tasks and 4 advanced tasks.  
+This project includes 20 mandatory tasks and 2 advanced tasks.  
 
 ### Mandatory Tasks
 
 - **Task 0:** `If it's not tested it doesn't work`  
 
 - **Task 1:** `Base class`  
++ Files: __models//base.py, models//_/_init/_/_.py__
+In this task a Base class will be created
 
 - **Task 2:** `First Rectangle`  
 
