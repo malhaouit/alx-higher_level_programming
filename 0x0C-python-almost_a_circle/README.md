@@ -17,13 +17,13 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 - **Task 1:** __Base class__  
 	+ Files: [models/base.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/base.py), [models/\_\_init\_\_.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/__init__.py)  
 
-	With the file ` \_\_init\_\_.py ` the the folder `models` will become a Python package.  
+	With the file `__init__.py ` the the folder `models` will become a Python package.  
 
 	In this task a Base class will be created.  
 
 	Inside the class Base:  
-	\- create private class attribute `__nb_objects = 0`  
-	\- implement a class constructor: `def __init__(self, id=None):`  
+		\- create private class attribute `__nb_objects = 0`  
+		\- implement a class constructor: `def __init__(self, id=None):`  
 
 	**Note:** This class will be the “base” of all other classes in this project. The goal of it is to manage id attribute in all your future classes and to avoid duplicating the same code.
 
