@@ -73,8 +73,15 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 
 	Note: Argument order is not important.
 
-- **Task 10:** `And now, the Square!`  
+- **Task 10:** __And now, the Square!__  
+	+ File: []()  
 
+	In the file `square.py`:
+	+ Write a class `Square` inherits from `Rectangle`  
+	+ Implement a class constructor: `def __init__(self, size, x=0, y=0, id=None):`  
+	+ Use the logic of the `__init__` of the `Rectangle` class
+	+ The overloading `__str__` method should return `[Square] (<id>) <x>/<y> - <size>` - in our case, `width` or `height` (in a square the width and height are equal)  
+  
 - **Task 11:** `Square size`  
 
 - **Task 12:** `Square update`  
