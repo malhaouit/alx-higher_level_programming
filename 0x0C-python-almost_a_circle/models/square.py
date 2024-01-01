@@ -1,4 +1,4 @@
-#!/usr/ba in/python3
+#!/usr/bin/python3
 """
 This module includes a Square class that inherits from
 a super class: Rectangle class (look at file rectangle.py).
