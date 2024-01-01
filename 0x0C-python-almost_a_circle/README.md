@@ -64,7 +64,7 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 	
 	Note: Argument order is super important.
 
-- **Task 9:** `Update #1` 
+- **Task 9:** __Update #1__ 
 	+ File: [models/rectangle.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/rectangle.py) 
 
 	Update the class Rectangle by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:  
@@ -74,7 +74,7 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 	Note: Argument order is not important.
 
 - **Task 10:** __And now, the Square!__  
-	+ File: []()  
+	+ File: [models/square.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/square.py)  
 
 	In the file `square.py`:
 	+ Write a class `Square` inherits from `Rectangle`  
