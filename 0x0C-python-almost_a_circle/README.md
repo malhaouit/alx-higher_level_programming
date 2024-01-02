@@ -89,13 +89,26 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 	+ The setter should assign (in this order) the `width` and the `height` - with the same value  
 	+ The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
 
-- **Task 12:** `Square update`  
+- **Task 12:** __Square update__  
+	+ File: [models/square.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/square.py)  
 
-- **Task 13:** `Rectangle instance to dictionary representation`  
+	Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:  
+	+ `**kwargs` must be skipped if `*args` exists and is not empty
 
-- **Task 14:** `Square instance to dictionary representation`  
+- **Task 13:** __Rectangle instance to dictionary representation__  
+	+ File: [models/rectangle.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/rectangle.py)  
 
-- **Task 15:** `Dictionary to JSON string`  
+	Update the class Rectangle by implementing the public method `def to_dictionary(self): that returns the dictionary representation of a `Rectangle`.  
+
+- **Task 14:** __Square instance to dictionary representation__  
+	+ File: [models/square.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/square.py)
+	
+	Update the class Square by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`.
+
+- **Task 15:** __Dictionary to JSON string__  
+	+ File: [models/base.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/base.py)  
+
+	Update the class `Base` by adding the static method `def to_json_string(list_dictionaries):` that returns the JSON string representation of `list_dictionaries`.  
 
 - **Task 16:** `JSON string to file`  
 
