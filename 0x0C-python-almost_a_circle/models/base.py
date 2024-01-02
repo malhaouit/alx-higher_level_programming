@@ -5,6 +5,7 @@ of all other classes in this project
 
 Current file: base.py
 """
+import json
 
 
 class Base:
@@ -25,3 +26,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """ Returns the JSON string representation of list of dictionaries """
+        return json.dumps(list_dictionaries)
