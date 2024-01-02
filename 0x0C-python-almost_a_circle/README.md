@@ -82,7 +82,12 @@ This project includes 20 mandatory tasks and 2 advanced tasks.
 	+ Use the logic of the `__init__` of the `Rectangle` class
 	+ The overloading `__str__` method should return `[Square] (<id>) <x>/<y> - <size>` - in our case, `width` or `height` (in a square the width and height are equal)  
   
-- **Task 11:** `Square size`  
+- **Task 11:** __Square size__  
+	+ File: [models/square.py](https://github.com/malhaouit/alx-higher_level_programming/blob/master/0x0C-python-almost_a_circle/models/square.py)  
+
+	Update the class `Square` by adding the public getter and setter `size`.
+	+ The setter should assign (in this order) the `width` and the `height` - with the same value  
+	+ The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
 
 - **Task 12:** `Square update`  
 
