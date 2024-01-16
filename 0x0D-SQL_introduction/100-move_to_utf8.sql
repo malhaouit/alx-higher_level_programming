@@ -1,4 +1,4 @@
 -- Converts database hbtn_0c_0, first_table and name to UTF-8.
-USE `hbtn_0c_0`
-ALTER TABLE `first_table`
+USE hbtn_0c_0;
+ALTER TABLE first_table
 CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
