@@ -2,7 +2,6 @@
 
 const request = require('request');
 const URL = process.argv[2];
-const searchUrl = 'https://swapi-api.alx-tools.com/api/people/18/';
 
 request({ url: URL, json: true }, (err, response, body) => {
   if (err) {
@@ -13,9 +12,11 @@ request({ url: URL, json: true }, (err, response, body) => {
   if (response.statusCode === 200) {
     let count = 0;
     body.results.forEach(film => {
-      if (film.characters.includes(searchUrl)) {
-        count++;
-      }
+      film.characters.forEach(characterUrl => {
+        if (characterUrl.endsWith('18/')) {
+          count++;
+        }
+      });
     });
     console.log(count);
   }
